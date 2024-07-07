@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
   }
 
 /* Prevent font size inflation */
@@ -94,8 +95,15 @@ nav {
 }
 
 nav .logo a img {
+    max-width: 206px;
     width: 100%;
     height: 5rem;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .links-item {
@@ -223,7 +231,9 @@ nav .toggle-btn {
 
 .flex-item-hero{
     display: grid;
+    -webkit-justify-content: end;
     justify-content: end;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -296,16 +306,43 @@ nav .toggle-btn {
 }
 
 .vehicles{
-    width: 35%;
+    width: 80%;
 }
 
+.section-3-grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: end;
+}
+
+.section-3-div{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 10px 0px;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3)
+    
+}
+
+.section-3-div-mid{
+    align-items: flex-end;
+}
+
+/* this code is for when the 3 vehicles are on their own rows
 .section-3-div-mid{
     display: grid;
     justify-items: end;
 }
 
+.section-3-div-motor{
+    margin-top: 3rem;
+} */
+
 #section-4{
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
     font-size: 1.4rem;
 }
@@ -394,6 +431,8 @@ nav .toggle-btn {
   }
   .footer-col{
      padding: 1rem 15px;
+     color: #bbbbbb;
+
   }
   .footer-col h4{
     font-size: 18px;
@@ -459,6 +498,12 @@ nav .toggle-btn {
         width: 300px;
     }
 
+    .section-3-div{
+        border-radius: 0px 0px 20px 0px;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+        
+    }
+
     .footer-col{
         width: 100%;
     }
@@ -506,6 +551,16 @@ nav .toggle-btn {
     .flex-item-hero{
         flex: 0 0 50%;
         max-width: 50%;
+    }
+
+    
+    /* this code is for when the 3 vehicles are on their own rows
+    .section-3-div-motor{
+        margin-top: 5rem;
+    } */
+    
+    #section-4{
+        padding-top: 5rem;
     }
 
     .flex-item-section-6{
